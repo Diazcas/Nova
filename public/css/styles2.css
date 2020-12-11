@@ -1,0 +1,36 @@
+.backimg{
+    background: url(/images/nova_register.jpg);
+    background-size: auto auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    margin: auto;
+}
+
+#titulo{
+    margin-top: 0px;
+    width: 60%;
+    margin-top: 80px;
+    animation: 1s ease-out 0s 1 slidefromup;
+}
+
+@keyframes slidefromup {
+    0%{
+        transform: translatey(-120%);
+    }
+    100%{
+        transform: translatey(0);
+    }
+
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+}

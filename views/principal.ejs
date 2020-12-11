@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NOVA</title>
+  <%- include ('partials/styles') %>
+</head>
+
+<body class="backimg">
+  <!--
+      Barra Nav
+    -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: rgba(0, 0, 0, 0.7);">
+    <a class="navbar-brand js-scroll-trigger" style="padding-left: 80px;" href="/"> NOVA </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div style="padding-left: 63%;" class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/">Inicio <span class="sr-only">(current)</span></a>
+        </li>
+        <!--          <li class="nav-item">
+            <a class="nav-link" href="#">Perfil</a>
+          </li>
+          -->
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+
+            <select name="OS">
+              <option value="1">Perfil</option>
+              <option value="2">Editar</option>
+              <option value="3">Configuracion</option>
+              <option value="4">Cerrar Sesion</option>
+
+            </select>
+          </a>
+
+
+          <!--
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Editar</a>
+              <a class="dropdown-item" href="#">Configuracion</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Cerrar Sesion</a>
+            </div>
+          </li>
+          -->
+          <!--
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+          -->
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="Buscar" placeholder="Buscar" aria-label="Buscar">
+        <button class="btn btn-outline-success my-2 my-sm-0" style="padding-left: 5px ;" type="submit">Buscar</button>
+      </form>
+    </div>
+  </nav>
+  <!--
+      Barra Nav
+    -->
+  <div id="titulo" class="container">
+    <!------------  Crea el contenedor de la imagenes  ------------->
+    <table class="egt" style=" border-collapse: separate; border-spacing: 20px 15px;">
+      <tr>
+        <td>
+          <div id="main">
+            <div class="contenedor-imagenes">
+              <div class="imagen">
+                <div
+                  style="background-color:darkgrey; text-align: center; font-size: 100%; border: black; border-radius: 15px;">
+                  <img src="images/imagen-tiendas/peinado.png" alt="" WIDTH="70%">
+                  <a style="text-decoration: none; color: black;" href="" class="cajon">
+                    <h3>BARBERIA<br></h3>
+                  </a>
+                </div>
+              </div>
+        </td>
+
+        <td>
+          <div class="contenedor-imagenes">
+            <div class="imagen">
+              <div
+                style="background-color:darkgrey; text-align: center; font-size: 100%; border: black; border-radius: 40px;">
+                <img src="images/imagen-tiendas/clinica.png" alt="" WIDTH="70%">
+                <a style="text-decoration: none; color: black;" href="" class="cajon">
+                  <h3>CLINICA<br></h3>
+                </a>
+              </div>
+            </div>
+        </td>
+
+        <td>
+          <div class="contenedor-imagenes">
+            <div class="imagen">
+
+              <div
+                style="background-color:darkgrey; text-align: center; font-size: 100%; border: black; border-radius: 40px;">
+                <img src="images/imagen-tiendas/vitamina.png" alt="" WIDTH="70%">
+                <a style="text-decoration: none; color: black;" href="" class="cajon">
+                  <h3>FARMACIAS<br></h3>
+                </a>
+              </div>
+            </div>
+        </td>
+
+      </tr>
+
+      <tr>
+        <td>
+          <div class="contenedor-imagenes">
+            <div class="imagen">
+              <div
+                style="background-color:darkgrey; text-align: center; font-size: 100%; border: black; border-radius: 40px;">
+                <img src="images/imagen-tiendas/restaurante.png" alt="" WIDTH="70%">
+                <a style="text-decoration: none; color: black;" href="/restaurante" class="cajon">
+                  <h3>RESTAURANTES<br></h3>
+                </a>
+              </div>
+            </div>
+        </td>
+
+        <td>
+          <div class="contenedor-imagenes">
+            <div class="imagen">
+              <div
+                style="background-color:darkgrey; text-align: center; font-size: 100%; border: black; border-radius: 40px;">
+                <img src="images/imagen-tiendas/cafeteria.png" alt="" WIDTH="70%">
+                <a style="text-decoration: none; color: black;" href="" class="cajon">
+                  <h3>CAFETERIA<br></h3>
+                </a>
+              </div>
+            </div>
+        </td>
+
+        <td>
+          <div class="contenedor-imagenes">
+            <div class="imagen">
+              <div
+                style="background-color:darkgrey; text-align: center; font-size: 100%; border: black; border-radius: 40px;">
+                <img src="images/imagen-tiendas/carrito-de-compras.png" alt="" WIDTH="70%">
+                <a style="text-decoration: none; color: black; " href="" class="cajon">
+                  <h3>TIENDA<br></h3>
+                </a>
+              </div>
+            </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <div class="contenedor-imagenes">
+            <div class="imagen">
+              <div
+                style="background-color:darkgrey; text-align: center; font-size: 100%; border: black; border-radius: 40px;">
+                <img src="images/imagen-tiendas/cambio-de-imagen.png" alt="" WIDTH="70%">
+                <a style="text-decoration: none; color: black;" href="/salonBelleza" class="cajon">
+                  <h3>SALA DE BELLEZA<br></h3>
+                </a>
+              </div>
+            </div>
+        </td>
+      </tr>
+    </table>
+</body>
+
+</html>

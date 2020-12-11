@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic"
+        rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/estilos.css">
+
+</head>
+
+<body class="backimg">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: rgba(0, 0, 0, 0.7);">
+        <a class="navbar-brand js-scroll-trigger" style="padding-left: 80px;" href="/"> NOVA </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div style="padding-left: 63%;" class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Inicio <span class="sr-only">(current)</span></a>
+                </li>
+
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+                        <select name="OS">
+                            <option value="1">Perfil</option>
+                            <option value="2">Editar</option>
+                            <option value="3">Configuracion</option>
+                            <option value="4">Cerrar Sesion</option>
+
+                        </select>
+                    </a>
+
+
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="Buscar" placeholder="Buscar" aria-label="Buscar">
+                <button class="btn btn-outline-success my-2 my-sm-0" style="padding-left: 5px ;"
+                    type="submit">Buscar</button>
+            </form>
+        </div>
+    </nav>
+
+
+    <div id="titulo" class="container"></div>
+
+
+
+
+    <table class="egt" style="position:absolute;top:100px;left:500px;">
+        <tr>
+            <td>
+
+                <div id="main">
+                    <div class="contenedor-imagenes">
+                        <div class="imagen">
+                            <div style=" background-color: white; filter:alpha(opacity=90); opacity: 0.9;; 
+                                        text-align: center; font-size: 50%; 
+                                        border: black; border-radius: 40px;">
+                                <table>
+                                    <h3>SELLECIONE EL SERVICIO QUE DESEA RECIBIR:</h3>
+                                    <div class="hola">
+                                        <div class="imagen1"
+                                            style="display:block; display:inline-block; line-height:0;">
+                                            <img src="images/salon-belleza/productos-cosmeticos.png" alt=""
+                                                WIDTH="80px">
+                                            <a style="text-decoration: none; color: black;" href="" class="cajon">
+                                                <h4>MAQUILLAJE</h4>
+                                        </div>
+
+                                        <div class="imagen2"
+                                            style="display:block; display:inline-block; line-height:0;">
+                                            <img src="images/salon-belleza/mujer.png" alt="" WIDTH="80px">
+                                            <a style="text-decoration: none; color: black;" href="" class="cajon">
+                                                <h4>CABELLO</h4>
+                                            </a>
+
+                                        </div>
+                                        <div class="imagen3"
+                                            style="display:block; display:inline-block; line-height:0;">
+                                            <img src="images/salon-belleza/esmalte-de-unas.png" alt="" WIDTH="80px">
+                                            <a style="text-decoration: none; color: black;" href="" class="cajon">
+                                                <h4>UÑAS</h4>
+                                            </a>
+                                        </div>
+
+                                    </div>
+
+
+                                </table>
+            </td>
+        </tr>
+
+
+        <tr>
+            <td>
+
+                <div class="cita">
+                    <div style="margin-left: auto; margin-right: auto;" class="cod-container">
+                        <form class="cod-form">
+                            <div class="form-title">
+                                <h3>AGENDAR CITA:</h3>
+                            </div>
+
+                            <div class="input-group">
+                                <input type="text" class="form-input" name="form-input" id="nombre"
+                                    pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,60}"
+                                    required="required">
+                                <b><label class="label" for="pnombre"> Nombre</label></b>
+                            </div>
+
+
+
+                            <div class="input-group">
+                                <input type="text" class="form-input" name="form-input" id="telefono" pattern="[0-9]{8}"
+                                    required="required">
+                                <b><label class="label" for="telefono">Telefono</label></b>
+                            </div>
+
+                            <div class="input-group">
+                                <input type="date" class="form-input" name="form-input" id="fecha" min="1930-01-01" ,
+                                    max="2021-12-31" required="required">
+                                <b><label class="label" for="fecha">fecha de cita</label></b>
+                            </div>
+
+
+
+                            <div class="input-group">
+                                <input type="email" class="form-input" name="form-input" id="correo"
+                                    pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$"
+                                    required="required" />
+                                <b><label class="label" for="correo">Correo</label></b>
+                            </div>
+
+
+
+                            <div class="input-group">
+                                <b>
+                                    <input type="button" class="form-input" value="AGENDAR" onclick="AGENDAR()">
+                                </b>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+
+                </div>
+            </td>
+        </tr>
+
+    </table>
+
+
+</body>
+
+</html>

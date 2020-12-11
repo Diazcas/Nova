@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Iniciar sesion</title>
+    <%- include ('partials/styles') %>
+</head>
+
+<%- include ('partials/navbarreg') %>
+
+<body class="backimg">
+    <div id="titulo" class="card" style="width: 35rem; margin-left: auto; margin-right: auto; margin-top: 100px;">
+        <h2 style="margin-left: auto; margin-right: auto; margin-top: 15px;">NOVA</h2>
+        <div class="card-body">
+            <form action="/verificarLogin" method="POST">
+                <div class="form-group">
+                    <input id = "user" type="email" class="form-control" name="user" aria-describedby="emailHelp" placeholder="Usuario">
+                </div>
+                <div class="form-group">
+                    <input id= "password" type="password" class="form-control" name="password" placeholder="Contraseña">
+                </div>
+                <button type="submit" class="btn btn-primary form-control">Inciar sesión</button>
+                <div id ="mensaje">
+    
+                </div>
+                <h4></h4>
+                <a style="font-size: small;  margin-left: auto; margin-right: auto; text-align: center; display: inline-block; width: 100%; "
+                    href="#">¿Olvidaste tu contraseña?</a>
+                <hr>
+
+                <div class="form-inline" style="  display: flex; align-items: center; justify-content: center;">
+                    <p style="padding:3px; font-size: small;text-align: center; display: inline-block; ">¿No tienes
+                        cuenta? </p>
+                    <p><a style="padding:3px; font-size:small; text-align: center; display: inline-block;"
+                            href="/registro"> Regístrate</a></p>
+        
+                </div>
+            </form>
+        </div>
+    </div>
+    <br>
+
+    <!-- Bootstrap core JS-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Third party plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+</body>
+</html>
+<script>
+    function entrar(){
+        var user = document.getElementById("user").value;
+        var password = document.getElementById("password").value;
+            if (user == "nova@nova.com" && password == "nova") {
+                console.log("hola")
+                document.location.href="/principal" 
+            }
+            else{
+                document.getElementById("mensaje").innerHTML +=`<p style = "color:red">Datos incorrectos</p>`
+            }
+    }
+    </script>
