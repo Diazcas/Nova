@@ -42,6 +42,6 @@ app.listen(8888, ()=>{
     console.log('Servidor del backend levantado en 8888');
 });
 */
-server.listen(app.get('port'), () => {
+app.listen(app.get('port'), () => {
     console.log(`server on port ${app.get('port')}`);
 });
