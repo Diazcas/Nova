@@ -1,140 +1,106 @@
 <!DOCTYPE html>
-	<html lang="en">
+<html lang="en">
+
 <head>
-		<meta charset="utf-8">
-		<title>Menu Restaurante 1</title>
-		<link rel="stylesheet" href="css/bootstrap-menu.css">
-		<link rel="stylesheet" href="css/bootstrap-responsive-menu.css">
-		<link rel="stylesheet" href="css/custom-menu.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>NOVA</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+		integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<%- include ('partials/styles') %>
 </head>
-<body>
-	<!-- Barra Verde -->
-	<div class="topline"></div>
-	<!-- Barra Verde-->
-	<div class="navbar navbar-inverse navbar-fixed-top">
-		<div class="navbar-inner">
-			<div class="container">
-				<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				</a>
-				<div class="nav-collapse collapse">
-					
-					<!-- Izquierda menu-->
-					<ul class="nav leftmenu">
-						<li><a href="index.html">Inicio</a></li>
-						<li><a href="#">Sobre nosotros y mas...</a></li>
-					</ul>
-					<!-- Derecha menu -->
-					<ul class="nav rightmenu">
-						<li><a href="portofolio.html">Menu</a></li>
-						<li class="lastmenu"><a href="#" class="lastmenu">Contactanos</a></li>
-					</ul>
+
+<body style="background-color: #F0F2F5;">
+	<!--
+      Barra Nav
+    -->
+	<nav class="navbar navbar-expand-md fixed-top" style="background-color: #F4623A;">
+
+		<a class="navbar-brand" href="/" style="color:white">
+			<img src="images/logo.png" alt="" width="40%" class="d-inline-block align-top">
+		</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+			aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarsExampleDefault">
+			<form class="form-inline my-2 my-lg-0 ml-auto">
+				<select class="form-select" aria-label="Default select example"
+					style="border-radius: 15px; border-color:white; color: #F4623A; background-color: white; padding: 5px;">
+					<option selected>Usuario</option>
+					<option value="1">One</option>
+					<option value="2">Two</option>
+					<option value="3">Three</option>
+				</select>
+			</form>
+		</div>
+	</nav>
+
+	<!--
+      Barra Nav
+	-->
+
+	<div class="container"  style="padding-top: 80px;">
+		<div class="row">
+			<div class="card-group">
+				<div class="card">
+					<img class="card-img-top" src="images/restaurante/portafolio-menu/burger.jpg"  alt="Card image cap">
+					<div class="card-body">
+						<h5 class="card-title"  style="display: flex; align-items: center; justify-content: center;">HAMBURGUESA CON QUESO</h5>
+						<p style = "font-size: 0.8rem;">
+							Cuarto de libra de carne de res,
+							queso amarillo, lechuga fresca, tomate
+							y salsa de la casa.
+							<br>Complemento: Papas Fritas y Refresco 22oz
+							<br/><a href="#" target="_BLANK">Ordenar Aqui</a>
+						</p>
+					</div>
 				</div>
-				<!-- Logo-->
-				<a class="brand logo" href="#">Restaurante<br/>X</a>
-				
-				<div class="hiremebadge">
-					<div class="hiremetext">
-						<a data-toggle="modal" href="#">Reserva</a>
+				<div class="card">
+					<img class="card-img-top" src="images/restaurante/portafolio-menu/Chuleta-costeña.jpg" alt="Card image cap">
+					<div class="card-body">
+						<h5 class="card-title"  style="display: flex; align-items: center; justify-content: center;">CHULETA COSTEÑA</h5>
+						<p style = "font-size: 0.8rem;">
+							Chuleta al estilo costeño, con tajadas de guineo verde
+							y salsa rosada de la casa.
+							<br>
+							Alternativa:
+							Chuleta al estilo costeño con papas fritas.
+							<br/><a href="#" target="_BLANK"> Ordenar Aqui</a>
+						</p>
+					</div>
+				</div>
+				<div class="card">
+					<img class="card-img-top" src="images/restaurante/portafolio-menu/pizza.jpg" alt="Card image cap">
+					<div class="card-body">
+						<h5 class="card-title"  style="display: flex; align-items: center; justify-content: center;">PIZZA ESPECIALIDAD</h5>
+						<p style = "font-size: 0.8rem;">
+							<b>Especialidades:</b><br>
+							Pepperoni <br> Triple Carne <br> Jamon y queso <br> 4 estaciones.
+							<br>Tamaños:
+							<br>Personal <br>
+							Grande (8 pedazos) <br>
+							Gigante (12 pedazos)
+							<br/><a href="#" target="_BLANK">Ordenar Aqui</a>
+						</p>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-<!-- Container
-================================================== -->
-	<div class="container">
-		<h1 class="title">MENÚ</h1>
-		<div class="titlelinesimple">
-		</div>
-		<!-- Portafolio
-		================================================== -->
-		<div class="row center">
-			<div class="span16">
-				<div class="boxgrid slideright">
-					<img class="cover" src="images/restaurante/portafolio-menu/burger.jpg" alt=""/>
-				</div>
-				<div class="boxgrid thecombo">
-					<img class="cover" src="images/restaurante/portafolio-menu/Chuleta-costeña.jpg" alt=""/>
-				</div>
-				<div class="boxgrid slideright">
-					<img class="cover" src="images/restaurante/portafolio-menu/pizza.jpg" alt=""/>
-				</div>
-				<div class="boxgrid thecombo">
-					<h3>HAMBURGUESA CON QUESO</h3>
-					<p>
-						Cuarto de libra de carne de res,
-						queso amarillo, lechuga fresca, tomate
-						y salsa de la casa.
-						<br>Complemento: Papas Fritas y Refresco 22oz
-						<br/><a href="#" target="_BLANK">Ordenar Aqui</a>
-					</p>
-				</div>
-				<div class="boxgrid slideright">
-					<h3>CHULETA COSTEÑA</h3>
-					<p>
-						Chuleta al estilo costeño, con tajadas de guineo verde
-						y salsa rosada de la casa.
-						<br>
-						Alternativa:
-						Chuleta al estilo costeño con papas fritas.
-						<br/><a href="#" target="_BLANK"> Ordenar Aqui</a>
-					</p>
-				</div>
-				<div class="boxgrid thecombo">
-					<h3>PIZZA ESPECIALIDAD</h3>
-					<p>
-						Especialidades: <br>
-						Pepperoni <br> Triple Carne <br> Jamon y queso <br> 4 estaciones.
-						<br>Tamaños:
-						<br>Personal <br>
-						Grande (8 pedazos) <br>
-						Gigante (12 pedazos)
-						<br/><a href="#" target="_BLANK">Ordenar Aqui</a>
-					</p>
-				</div>
-			</div>
-		</div>
-		<!-- Footer  -->
-		<div class="footerli"></div>
-		<div class="tweetarea">
-			<div class="tweettext">
-				<div class="row">
-					<div class="span-one-third">
-						<div class="tweet"></div>
-					</div>
-					<div class="span-one-third">
-						<div class="centermargin">
-							<div class="facebook">
-								<a href="#"></a>
-							</div>
-							<div class="twitter">
-								<a href="#"></a>
-							</div>
-							<div class="google">
-								<a href="#"></a>
-							</div>
-							<div class="flickr">
-								<a href="#"></a>
-							</div>
-						</div>
-					</div>
-					<div class="span-one-third center">
-						Reservas <br/>Contacto directo<br/>
-						<span class="small"><a href="mailto:NOVARestaurantes@gmail.com">NOVARestaurantes@gmail.com</a></span>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="footer center">
-			&copy; Copyright NOVA 2020
-		</div>
-	</div>
-<!-- Container-->
-<div class="footerend">
-</div>
+
+
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+		integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+		integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+		crossorigin="anonymous"></script>
 
 </body>
+
 </html>

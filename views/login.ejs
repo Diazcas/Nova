@@ -10,7 +10,30 @@
 
 <%- include ('partials/navbarreg') %>
 
-<body class="backimg">
+<body style="background-color: #F0F2F5;">
+    <nav class="navbar navbar-expand-md fixed-top" style="background-color: #F4623A;">
+
+        <a class="navbar-brand" href="/" style = "color:white">
+      <img src="images/logo.png" alt="" width="40%" class="d-inline-block align-top">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+          aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+          <form class="form-inline my-2 my-lg-0 ml-auto">
+            <select class="form-select" aria-label="Default select example"
+              style="border-radius: 15px; border-color:white; color: #F4623A; background-color: white; padding: 5px;">
+              <option selected>Usuario</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </form>
+        </div>
+      </nav>
+      <!-- fin del nav -->
     <div id="titulo" class="card" style="width: 35rem; margin-left: auto; margin-right: auto; margin-top: 100px;">
         <h2 style="margin-left: auto; margin-right: auto; margin-top: 15px;">NOVA</h2>
         <div class="card-body">
@@ -43,7 +66,7 @@
     <br>
 
     <!-- Bootstrap core JS-->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Third party plugin JS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>

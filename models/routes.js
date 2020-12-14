@@ -43,10 +43,13 @@ module.exports = (app, passport) => {
         console.log(req.body);
     
         let usuario = new Usuarios()
-        usuario.user = req.body.user
+        usuario.nombreEmpresa = req.body.user
+        usuario.email = req.body.email
         usuario.password = req.body.password
+        usuario.telefono = req.body.telefono
+        usuario.direccion = req.body.direccion
     
-        usuario.save((err, usuarioGuardado) => {
+        usuario.save((err) => {
             if (err) {
                 res.render('registro'), {
                     message: req.flash('error')
@@ -56,15 +59,6 @@ module.exports = (app, passport) => {
                     message: req.flash('exito')
                 };
             }
-
-            //res.status(500).send({message:'error al guardar en la base de datos: ${err}'})
-    
-            /*res.status(200).send({usuario: usuarioGuardado});
-            res.send(500,'showAlert')
-            res.render('principal');
-            */
-            
-           
         });
     });
 
@@ -72,14 +66,13 @@ module.exports = (app, passport) => {
         let usuarioUser =  req.body.user
         let usuarioPassword =  req.body.password
         console.log(usuarioUser, usuarioPassword);
-        Usuarios.findOne({ user: usuarioUser, password: usuarioPassword }, function (err, usuario1) {
+        Usuarios.findOne({ email: usuarioUser, password: usuarioPassword }, function (err, usuario1) {
             console.log(usuario1);
             if (usuario1 == null){
                 res.render('login');
             } else {
                 res.render('principal');
             }
-            //res.status(200).send({usuario: usuario});
         });
     });
 };
